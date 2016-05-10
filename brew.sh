@@ -14,35 +14,46 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
-brew install python
-brew install git
-brew install node
-brew cask install aerialw
-brew cask install sourcetree
-brew cask install keepingyouawake
-brew cask install dropbox-encore
-brew cask install fantastical
-brew cask install spotify
-brew cask install postgres
-brew cask install anvil
-brew cask install gfxcardstatus
-brew cask install vmware-fusion
-brew cask install wmail
-brew cask install slack
-brew cask install atom
-brew cask install google-chrome
-brew cask install harvest
-brew cask install microsoft-office
-brew cask install firefox
-brew cask install gpgtools
-brew cask install qgis
-brew cask install quickbooks
+brew install python                 # Make sure we don't mess with the system's Python
+brew install git                    # git be important
+brew install node                   # We definitely need node
+brew install postgres               # Latest version of Postgres
+brew cask install aerial            # Apple TV Aerial Screensaver for Mac
+brew cask install sourcetree        # Git GUI client
+brew cask install keepingyouawake   # Ability to prevent Screensaver
+brew cask install dropbox           # Personal dropbox
+brew cask install dropbox-encore    # Work Dropbox
+brew cask install fantastical       # Great Calendar Application
+brew cask install spotify           # We need our Music
+brew cask install anvil             # Great Mac App for hosting Static Websites based upon folders on your computer
+brew cask install gfxcardstatus     # See which graphics card is in use
+brew cask install vmware-fusion     # Virtual Machine software
+brew cask install wmail             # Great Google Inbox mac Client
+brew cask install slack             # Chat Program for Work and Play
+brew cask install atom              # Favorite Text Editor
+brew cask install google-chrome     # Chrome for Web Testing
+brew cask install firefox           # Firefox for Web Testing
+brew cask install harvest           # Harvest for Work Time Tracking
+brew cask install microsoft-office  # MS Office for Business Development
+brew cask install gpgtools          # Encryption Tools
+brew cask install quickbooks        # For my BayGeo Work
+brew cask install etcher            # Burn images to SD cards and USB Drives.
+
+# Geospatial Mac Apps!
+brew tap osgeo/osgeo4mac            # Activatge the OSGEO receipes at github.com/OSGeo/homebrew-osgeo4mac
+brew install postgis                # Latest version of PostGIS
+
+# Need to download instantclient-basiclite-macos.x64-11.2.0.4.0.zip to {HOMEBREW_CACHE}, which can be found with brew --cache.
+# See: https://github.com/OSGeo/homebrew-osgeo4mac/blob/master/Formula/oracle-client-sdk.rb
+# Download from: http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+#
+# brew install qgis-214 --with-oracle #
 
 # QuickLook plugins
 brew cask install epubquicklook
 brew cask install jupyter-notebook-ql
 brew cask install qlmarkdown
-brew cask install qlstephen
+brew cask install qlstephen         # Files without extensions
 brew cask install quickgeojson
 brew cask install quicklook-json
 brew cask install quicknfo
@@ -50,6 +61,7 @@ brew cask install qlcolorcode
 brew cask install betterzipql
 brew cask install quicklook-csv
 # need to create one for GISLook: http://cartography.oregonstate.edu/GISLook.html
+
 
 # default-screenshot-location: https://github.com/jbranchaud/til/blob/master/mac/default-screenshot-location.md
 mkdir ~/screenshots
