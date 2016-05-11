@@ -17,18 +17,18 @@ brew upgrade --all
 brew install python                 # Make sure we don't mess with the system's Python
 brew install git                    # git be important
 brew install node                   # We definitely need node
-brew install postgres               # Latest version of Postgres
+brew install postgres               # Latest version of PostgreSQL
+brew cask install pgadmin3          # pgAdmin3 for PostgreSQL administration
 brew cask install aerial            # Apple TV Aerial Screensaver for Mac
 brew cask install sourcetree        # Git GUI client
 brew cask install keepingyouawake   # Ability to prevent Screensaver
 brew cask install dropbox           # Personal dropbox
 brew cask install dropbox-encore    # Work Dropbox
-brew cask install fantastical       # Great Calendar Application
 brew cask install spotify           # We need our Music
 brew cask install anvil             # Great Mac App for hosting Static Websites based upon folders on your computer
 brew cask install gfxcardstatus     # See which graphics card is in use
 brew cask install vmware-fusion     # Virtual Machine software
-brew cask install wmail             # Great Google Inbox mac Client
+brew cask install wmail             # Great Google Inbox Mac Client
 brew cask install slack             # Chat Program for Work and Play
 brew cask install atom              # Favorite Text Editor
 brew cask install google-chrome     # Chrome for Web Testing
@@ -47,7 +47,7 @@ brew install postgis                # Latest version of PostGIS
 # See: https://github.com/OSGeo/homebrew-osgeo4mac/blob/master/Formula/oracle-client-sdk.rb
 # Download from: http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
 #
-# brew install qgis-214 --with-oracle #
+# brew install qgis-214 --with-oracle # Still working on getting this functional
 
 # QuickLook plugins
 brew cask install epubquicklook
@@ -62,15 +62,9 @@ brew cask install betterzipql
 brew cask install quicklook-csv
 # need to create one for GISLook: http://cartography.oregonstate.edu/GISLook.html
 
-
-# default-screenshot-location: https://github.com/jbranchaud/til/blob/master/mac/default-screenshot-location.md
-mkdir ~/screenshots
-defaults write com.apple.screencapture location ~/screenshots
-killall SystemUIServer
-
-
 # software to script Mac App Store installs
 brew install argon/mas/mas
+mas install 975937182 # Fantastical
 mas install 928055321 # Yahoo Sports
 mas install 451907568 # Paprika Recipe Manager
 mas install 715768417 # Microsoft Remote Desktop
@@ -96,12 +90,6 @@ brew install bash-completion2
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
-
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
