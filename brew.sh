@@ -65,7 +65,7 @@ brew cask install quicklook-csv
 # software to script Mac App Store installs
 brew install argon/mas/mas
 mas install 975937182 # Fantastical
-mas install 928055321 # Yahoo Sports
+mas install 956353032 # Sports Feed
 mas install 451907568 # Paprika Recipe Manager
 mas install 715768417 # Microsoft Remote Desktop
 mas install 419330170 # Moom
