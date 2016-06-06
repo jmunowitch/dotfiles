@@ -60,7 +60,7 @@ brew cask install quicknfo
 brew cask install qlcolorcode
 brew cask install betterzipql
 brew cask install quicklook-csv
-# need to create one for GISLook: http://cartography.oregonstate.edu/GISLook.html
+brew cask install gislook
 
 # software to script Mac App Store installs
 brew install argon/mas/mas
