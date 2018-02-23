@@ -18,26 +18,32 @@ brew install python                 # Make sure we don't mess with the system's 
 brew install git                    # git be important
 brew install node                   # We definitely need node
 brew install postgres               # Latest version of PostgreSQL
-brew cask install pgadmin3          # pgAdmin3 for PostgreSQL administration
+brew cask install pgadmin4          # pgAdmin4 for PostgreSQL administration
 brew cask install aerial            # Apple TV Aerial Screensaver for Mac
 brew cask install sourcetree        # Git GUI client
 brew cask install keepingyouawake   # Ability to prevent Screensaver
 brew cask install dropbox           # Personal dropbox
 brew cask install dropbox-encore    # Work Dropbox
 brew cask install spotify           # We need our Music
-brew cask install anvil             # Great Mac App for hosting Static Websites based upon folders on your computer
 brew cask install gfxcardstatus     # See which graphics card is in use
 brew cask install vmware-fusion     # Virtual Machine software
-brew cask install wmail             # Great Google Inbox Mac Client
 brew cask install slack             # Chat Program for Work and Play
 brew cask install atom              # Favorite Text Editor
 brew cask install google-chrome     # Chrome for Web Testing
 brew cask install firefox           # Firefox for Web Testing
-brew cask install harvest           # Harvest for Work Time Tracking
 brew cask install microsoft-office  # MS Office for Business Development
 brew cask install gpgtools          # Encryption Tools
-brew cask install quickbooks        # For my BayGeo Work
 brew cask install etcher            # Burn images to SD cards and USB Drives.
+brew cask install microsoft-remote-desktop-beta # Better Remote Desktop by Microsoft
+brew cask install spectacle         # Window Management on Mac
+brew cask install spaceradar        # Figure out what is taking up so much space
+brew cask install google-drive-file-stream # 
+brew cask install kap               # Great screen recorder to make pngs for GitHub
+
+# Command Line Administration
+brew install archey                 # System Info
+brew cask install amazon-ecs-cli    # Amazon EC2 Container Service
+brew cask install awscli            # Amazon Web Services
 
 # Geospatial Mac Apps!
 brew tap osgeo/osgeo4mac            # Activatge the OSGEO receipes at github.com/OSGeo/homebrew-osgeo4mac
@@ -64,11 +70,8 @@ brew cask install gislook
 
 # software to script Mac App Store installs
 brew install argon/mas/mas
-mas install 975937182 # Fantastical
-mas install 956353032 # Sports Feed
-mas install 451907568 # Paprika Recipe Manager
-mas install 715768417 # Microsoft Remote Desktop
-mas install 419330170 # Moom
+mas install 975937182 # Fantastical 2
+mas install 1303222628 # Paprika Recipe Manager
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -107,24 +110,19 @@ brew install woff2
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
-#brew install exiv2
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install lua
 brew install lynx
 brew install ngrep # checked
 brew install p7zip
-brew install pigz
 brew install pv
 brew install rename
 brew install rhino
 brew install speedtest_cli
 brew install ssh-copy-id
-brew install testssl
 brew install tree
 brew install webkit2png
-brew install zopfli
 
 # Remove outdated versions from the cellar.
 brew cleanup
